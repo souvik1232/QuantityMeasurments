@@ -289,7 +289,7 @@ LengthConverter = (valNum) => {
             }
             break;
         default:    
-        value = valNum     
+        // value = valNum     
         // $("#toNumber").val(null);
             break;
 
@@ -333,7 +333,7 @@ TemperatureConverter = (valNum) => {
             break;
 
         default: 
-        value=valNum
+        // value=valNum
             break;
 
     }
@@ -376,7 +376,7 @@ VolumeConverter = (valNum) => {
             break;
 
         default: 
-        value=valNum
+        // value=valNum
             break;
 
     }
