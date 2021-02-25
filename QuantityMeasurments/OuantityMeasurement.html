@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/QuantityMeasurement.css">
+   
+    <title>Quantity Mesurement</title>
+   
+</head>
+<body onload="loadFunction()">
+    <div class="header">
+        <h3 class="QuantText">Quanment</h3>
+        <h4 class="history">History</h4>
+    </div>
+    <div class="welcome">
+        Welcome To Quantity Measurement
+    </div>
+    <div class="allbody">
+        <div class="inner-body">
+            <p>choose type</p>
+            <div class="container-box">
+                <div id="card1" class="box1">
+                    <img>
+                    <div id="length">Length</div>
+                </div>
+                <div id="card2" class="box2">
+                    <img>
+                    <div id="temperature">Temperature</div>
+                </div>
+                <div id="card3" class="box3">
+                    <img>
+                    <div id="voluem">Volume</div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="container-form">
+            <div class="From">
+                <div>
+                    FROM
+                </div>
+                <form class="form-input">
+                    <input class="fromNumber" type="number" name="field1"  id="fromNumber" oninput="converter(this.value)" onchange="converter(this.value)" />
+                    <select class="convert1" name="select" id="convert1" onchange="showResultOne(this.options[this.selectedIndex])">
+                    </select>
+                </form>
+            </div>
+            <div class="To">
+                <div>
+                    TO
+                </div>
+                <form class="form-input">
+                    <input class="toNumber" type="number" name="field2"  id="toNumber" />
+                    <select class="convert2" name="select" id="convert2" onchange="showResultTwo(this.options[this.selectedIndex])">
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="/js/QuantityMeasurement.js">
+    </script>
+</body>
+</html>
